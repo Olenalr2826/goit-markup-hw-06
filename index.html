@@ -10,7 +10,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/styles-old.css" /> -->
+    <link rel="stylesheet" href="./css/styles-mob.css" />
+    <link rel="stylesheet" href="./css/media.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -49,6 +51,91 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button">
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu is-open">
+        <div class="container mobile-menu-container">          
+          <button type="button" class="mobile-menu-close">
+            <svg class="close" width="8" height="8">
+              <use href="./images/icons.svg#icon-for-button-close"></use>
+            </svg>
+          </button>          
+          <nav class="mobile-menu-nav">
+            <ul class="nav-mobile">
+              <li>
+                <a class="link-list-mobile link-mobile" href="./index.html">Studio</a>
+              </li>
+              <li><a class="link-list-mobile" href="">Portfolio</a></li>
+              <li><a class="link-list-mobile" href="">Contacts</a></li>
+            </ul>
+          </nav>
+          <address>
+            <ul class="contacts-list-mobile">
+              <li>
+                <a class="link-contacts-mobile link-mobile" href="tel:+110001111111"
+                  >+11 (000) 111-11-11
+                </a>
+              </li>
+              <li>
+                <a class="link-contacts-mobile" href="mailto:info@devstudio.com"
+                  >info@devstudio.com
+                </a>
+              </li>              
+            </ul>
+          </address>
+          <div class="social-link-mobile">
+            <ul class="social-link-media">
+              <li class="social-link-item">
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  class="link link-footer"
+                >
+                  <svg class="icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-link-item">
+                <a
+                  href="https://www.twitter.com/"
+                  target="_blank"
+                  class="link link-footer"
+                >
+                  <svg class="icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-link-item">
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  class="link link-footer"
+                >
+                  <svg class="icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-link-item">
+                <a
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  class="link link-footer"
+                >
+                  <svg class="icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -115,13 +202,18 @@
           </ul>
         </div>
       </section>
-      <!--Секція 3-->
+      <!--Секція 3-->      
       <section class="section section-team">
         <div class="container">
           <h2 class="description">Our Team</h2>
           <ul class="item">
             <li class="list-team">
-              <img src="./images/img1.jpg" alt="teamcard1" width="264" />
+              <picture>
+                <source srcset="./picture mobile/img1-mob-1x.jpg 1x, ./picture mobile/img1-mob-2x.jpg 2x" media="(max-width: 767px;)">
+                <source srcset="./picture tablet/img1-tab-1x.jpg 1x, ./picture tablet/img1-tab-2x.jpg 2x,"  media="(min-width: 768px;)">
+                <source srcset="./picture dekstop/img1-dek-1x.jpg 1x, ./picture dekstop/img1-dek-2x.jpg 2x " media="(min-width: 1158px;)">
+                <img src="./images/img1.jpg" alt="teamcard1" width="264" />
+              </picture>              
               <div class="card-description">
                 <h3 class="name-title">Mark Guerrero</h3>
                 <p class="name-title-text">Product Designer</p>
@@ -174,7 +266,12 @@
               </div>
             </li>
             <li class="list-team">
-              <img src="./images/img2.jpg" alt="teamcard2" width="264" />
+              <picture>
+                <source srcset="./picture mobile/img2-mob-1x.jpg 1x, ./picture mobile/img2-mob-2x.jpg 2x" media="(max-width: 767px;)">
+                <source srcset="./picture tablet/img2-tab-1x.jpg 1x, ./picture tablet/img2-tab-2x.jpg 2x,"  media="(min-width: 768px;)">
+                <source srcset="./picture dekstop/img2-dek-1x.jpg 1x, ./picture dekstop/img2-dek-2x.jpg 2x " media="(min-width: 1158px;)">
+                <img src="./images/img2.jpg" alt="teamcard2" width="264" />
+              </picture>
               <div class="card-description">
                 <h3 class="name-title">Tom Ford</h3>
                 <p class="name-title-text">Frontend Developer</p>
@@ -227,7 +324,12 @@
               </div>
             </li>
             <li class="list-team">
-              <img src="./images/img3.jpg" alt="teamcard3" width="264" />
+              <picture>
+                <source srcset="./picture mobile/img3-mob-1x.jpg 1x, ./picture mobile/img3-mob-2x.jpg 2x" media="(max-width: 767px;)">
+                <source srcset="./picture tablet/img3-tab-1x.jpg 1x, ./picture tablet/img3-tab-2x.jpg 2x,"  media="(min-width: 768px;)">
+                <source srcset="./picture dekstop/img3-dek-1x.jpg 1x, ./picture dekstop/img3-dek-2x.jpg 2x " media="(min-width: 1158px;)">
+                <img src="./images/img3.jpg" alt="teamcard3" width="264" />
+                </picture>
               <div class="card-description">
                 <h3 class="name-title">Camila Garcia</h3>
                 <p class="name-title-text">Marketing</p>
@@ -280,7 +382,12 @@
               </div>
             </li>
             <li class="list-team">
-              <img src="./images/img4.jpg" alt="teamcard4" width="264" />
+              <picture>
+                <source srcset="./picture mobile/img4-mob-1x.jpg 1x, ./picture mobile/img4-mob-2x.jpg 2x" media="(max-width: 767px;)">
+                <source srcset="./picture tablet/img4-tab-1x.jpg 1x, ./picture tablet/img4-tab-2x.jpg 2x,"  media="(min-width: 768px;)">
+                <source srcset="./picture dekstop/img4-dek-1x.jpg 1x, ./picture dekstop/img4-dek-2x.jpg 2x " media="(min-width: 1158px;)">
+                <img src="./images/img4.jpg" alt="teamcard4" width="264" />
+              </picture>
               <div class="card-description">
                 <h3 class="name-title">Daniel Wilson</h3>
                 <p class="name-title-text">UI Designer</p>
@@ -342,7 +449,12 @@
           <ul class="list-offer">
             <li class="list-offer-content">
               <div class="position">
-                <img src="./images/img5.jpg" alt="Banking App" width="360" />
+                <picture>
+                  <source srcset="./picture mobile/img5-mob-1x.jpg 1x, ./picture mobile/img5-mob-2x.jpg 2x" media="(max-width: 767px;)">
+                  <source srcset="./picture tablet/img5-tab-1x.jpg 1x, ./picture tablet/img5-tab-2x.jpg 2x,"  media="(min-width: 768px;)">
+                  <source srcset="./picture dekstop/img5-dek-1x.jpg 1x, ./picture dekstop/img5-dek-2x.jpg 2x " media="(min-width: 1158px;)">
+                  <img src="./images/img5.jpg" alt="Banking App" width="360" />
+                </picture>  
                 <p class="text-paragraf">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -356,11 +468,16 @@
             </li>
             <li class="list-offer-content">
               <div class="position">
-                <img
+                <picture>
+                  <source srcset="./picture mobile/img6-mob-1x.jpg 1x, ./picture mobile/img6-mob-2x.jpg 2x" media="(max-width: 767px;)">
+                  <source srcset="./picture tablet/img6-tab-1x.jpg 1x, ./picture tablet/img6-tab-2x.jpg 2x,"  media="(min-width: 768px;)">
+                  <source srcset="./picture dekstop/img6-dek-1x.jpg 1x, ./picture dekstop/img6-dek-2x.jpg 2x " media="(min-width: 1158px;)">
+                  <img
                   src="./images/img6.jpg"
                   alt="Cashless Payment"
                   width="360"
-                />
+                  />
+                </picture>
                 <p class="text-paragraf">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -374,7 +491,12 @@
             </li>
             <li class="list-offer-content">
               <div class="position">
-                <img src="./images/img7.jpg" alt="Meditation App" width="360" />
+                <picture>
+                  <source srcset="./picture mobile/img7-mob-1x.jpg 1x, ./picture mobile/img7-mob-2x.jpg 2x" media="(max-width: 767px;)">
+                  <source srcset="./picture tablet/img7-tab-1x.jpg 1x, ./picture tablet/img7-tab-2x.jpg 2x,"  media="(min-width: 768px;)">
+                  <source srcset="./picture dekstop/img7-dek-1x.jpg 1x, ./picture dekstop/img7-dek-2x.jpg 2x " media="(min-width: 1158px;)">
+                  <img src="./images/img7.jpg" alt="Meditation App" width="360" />
+                </picture>
                 <p class="text-paragraf">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -388,7 +510,12 @@
             </li>
             <li class="list-offer-content">
               <div class="position">
-                <img src="./images/img8.jpg" alt="Taxi Service" width="360" />
+                <picture>
+                  <source srcset="./picture mobile/img8-mob-1x.jpg 1x, ./picture mobile/img8-mob-2x.jpg 2x" media="(max-width: 767px;)">
+                  <source srcset="./picture tablet/img8-tab-1x.jpg 1x, ./picture tablet/img8-tab-2x.jpg 2x,"  media="(min-width: 768px;)">
+                  <source srcset="./picture dekstop/img8-dek-1x.jpg 1x, ./picture dekstop/img8-dek-2x.jpg 2x " media="(min-width: 1158px;)">
+                  <img src="./images/img8.jpg" alt="Taxi Service" width="360" />
+                </picture>
                 <p class="text-paragraf">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -402,11 +529,16 @@
             </li>
             <li class="list-offer-content">
               <div class="position">
-                <img
+                <picture>
+                  <source srcset="./picture mobile/img9-mob-1x.jpg 1x, ./picture mobile/img9-mob-2x.jpg 2x" media="(max-width: 767px;)">
+                  <source srcset="./picture tablet/img9-tab-1x.jpg 1x, ./picture tablet/img9-tab-2x.jpg 2x,"  media="(min-width: 768px;)">
+                  <source srcset="./picture dekstop/img9-dek-1x.jpg 1x, ./picture dekstop/img9-dek-2x.jpg 2x " media="(min-width: 1158px;)">
+                  <img
                   src="./images/img9.jpg"
                   alt="Screen Illustrations"
                   width="360"
-                />
+                  />
+                </picture>
                 <p class="text-paragraf">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -420,11 +552,16 @@
             </li>
             <li class="list-offer-content">
               <div class="position">
-                <img
+                <picture>
+                  <source srcset="./picture mobile/img10-mob-1x.jpg 1x, ./picture mobile/img10-mob-2x.jpg 2x" media="(max-width: 767px;)">
+                  <source srcset="./picture tablet/img10-tab-1x.jpg 1x, ./picture tablet/img10-tab-2x.jpg 2x,"  media="(min-width: 768px;)">
+                  <source srcset="./picture dekstop/img10-dek-1x.jpg 1x, ./picture dekstop/img10-dek-2x.jpg 2x " media="(min-width: 1158px;)">
+                  <img
                   src="./images/img10.jpg"
                   alt="Online Courses"
                   width="360"
-                />
+                  />
+                </picture>
                 <p class="text-paragraf">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
