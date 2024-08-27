@@ -56,14 +56,14 @@
          
     .about 
     {background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/people-office768.jpg);
+    url(../images/people-office-tab1x.jpg);
     padding-top: 112px;
     padding-bottom: 112px;
     max-width: 768px;}
 
     @media (min-resolution: 192dpi), (min-resolution: 2dppx)
     {.about {background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
-    url(../images/people-office-tab-2x);}}
+    url(../images/people-office-tab2x.jpg);}}
 
     .page-title 
     {max-width: 496px;
@@ -181,14 +181,14 @@
 
     .about 
     {background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/people-office.jpg);
+    url(../images/people-office-dek1x.jpg);
     padding-top: 188px;
     padding-bottom: 188px;
     max-width: 1440px;}
 
     @media (min-resolution: 192dpi), (min-resolution: 2dppx)
     {.about {background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
-    url(../images/people-office-dek-2x);}}
+    url(../images/people-office-dek2x.jpg);}}
 
     .page-title 
     {margin-bottom: 48px;}
