@@ -102,8 +102,11 @@
     .list-offer-content 
     {width: calc((100% - 24px) / 2);}   
 
-    .footer-page 
-    {padding-left: 92px;}
+    .wish
+    {width: 584px;}
+
+    /* .footer-page 
+    {padding-left: 92px;} */
     
     .wish-container 
     {margin-bottom: 0;}
@@ -250,7 +253,8 @@
     padding-left: 0;}
 
     .wish 
-    {flex-wrap: nowrap;}
+    {width: 100%;
+    flex-wrap: nowrap;}
 
     .wish-container 
     {margin-right: 120px;}
